@@ -1,0 +1,14 @@
+{
+  "manifest_version": 2,
+  "name": "Github Review Killer",
+  "version": "0.0.1",
+  "description": "Add a comment in Github PRs instead of starting a review",
+  "background": {
+    "scripts": ["src.js"]
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://github.com/*/pull/*/review_comment/create",
+  ]
+}
